@@ -84,7 +84,7 @@ export default function StockChart({ Symbol, Range, Interval }) {
   {
     return (
       <LineChart
-        style={{ marginLeft: Dimensions.get("window").width * 0.04 }}
+        style={{ marginLeft: Dimensions.get("window").width * 0.02 }}
         data={data}
         width={screenWidth}
         height={256}

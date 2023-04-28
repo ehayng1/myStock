@@ -158,7 +158,7 @@ export default function Home({ route, navigation }) {
               color: "#D84315",
             }}
           >
-            $ {userData.balance}
+            $ {userData.balance.toFixed(2)}
           </Text>
         </View>
         <View style={{ alignItems: "center", marginTop: 20 }}>

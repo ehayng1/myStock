@@ -95,19 +95,19 @@ export default function StockDetail({ route, navigation }) {
 
   // DO NOT ERASE!!!
   // comment when testing
-  // let stock = fetchStockInfo(route.params.symbol);
-  // let company = route.params.symbol;
-  // let price = stock[1];
-  // let prevClose = stock[2];
-  // let percent = stock[3];
-  // let shortName = stock[4];
-  // let dayLow = stock[6];
-  // let dayHigh = stock[7];
-  // let openPrice = stock[8];
-  // let fiftyTwoWeekLow = stock[9];
-  // let fiftyTwoWeekHigh = stock[10];
-  // let volume = stock[11];
-  // let mktCap = stock[12];
+  let stock = fetchStockInfo(route.params.symbol);
+  let company = route.params.symbol;
+  let price = stock[1];
+  let prevClose = stock[2];
+  let percent = stock[3];
+  let shortName = stock[4];
+  let dayLow = stock[6];
+  let dayHigh = stock[7];
+  let openPrice = stock[8];
+  let fiftyTwoWeekLow = stock[9];
+  let fiftyTwoWeekHigh = stock[10];
+  let volume = stock[11];
+  let mktCap = stock[12];
 
   const overview = [
     ["Previous Close", prevClose],
@@ -481,6 +481,7 @@ export default function StockDetail({ route, navigation }) {
               flexDirection: "row",
               justifyContent: "center",
               marginTop: "10%",
+              marginBottom: "10%",
             }}
           >
             <Pressable
@@ -559,6 +560,7 @@ export default function StockDetail({ route, navigation }) {
               flexDirection: "row",
               justifyContent: "center",
               marginTop: "10%",
+              marginBottom: "10%",
             }}
           >
             <Pressable

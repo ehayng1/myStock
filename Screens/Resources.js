@@ -97,9 +97,9 @@ function Resource({ navigation }) {
         if (value !== null) {
           let timeLeft;
           initTime = parseInt(value);
-          // let endTime = initTime + 345600000; // 604800 * 1000
+          let endTime = initTime + 345600000; // 604800 * 1000
           // for test
-          let endTime = initTime + 500000; // 604800 * 1000
+          // let endTime = initTime + 500000; // 604800 * 1000
 
           let curTime = new Date().getTime();
           timeLeft = endTime - curTime;

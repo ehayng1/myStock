@@ -123,10 +123,10 @@ function Trade({ route, navigation }) {
         </Text>
 
         <View style={{ flexDirection: "row" }}>
-          <Text style={{ color: "#808080", flex: 0.25 }}>Asset</Text>
-          <Text style={{ color: "#808080", flex: 0.25 }}>Price</Text>
-          <Text style={{ color: "#808080", flex: 0.25 }}>Amount</Text>
-          <Text style={{ color: "#808080", flex: 0.25 }}>Date</Text>
+          <Text style={{ color: "#808080", flex: 0.3 }}>Asset</Text>
+          <Text style={{ color: "#808080", flex: 0.3 }}>Price</Text>
+          <Text style={{ color: "#808080", flex: 0.3 }}>Amount</Text>
+          <Text style={{ color: "#808080" }}>Date</Text>
         </View>
 
         <View
@@ -159,32 +159,36 @@ function Trade({ route, navigation }) {
                     key={index}
                   >
                     <Text
-                      style={{ flex: 0.25, fontWeight: "bold", fontSize: 18 }}
+                      style={{ flex: 0.3, fontWeight: "bold", fontSize: 18 }}
                     >
                       {data[el].symbol}
                     </Text>
                     <Text
-                      style={{ flex: 0.25, fontWeight: "bold", fontSize: 16 }}
+                      style={{ flex: 0.3, fontWeight: "bold", fontSize: 16 }}
                     >
+                      {" "}
                       $ {data[el].price}
                     </Text>
                     <View
                       style={{
                         flexDirection: "row",
-                        flex: 0.25,
+                        flex: 0.3,
                         alignItems: "center",
                       }}
                     >
-                      <Text style={{ fontSize: 16 }}> {data[el].amount}</Text>
-                      <Text style={{ color: "#808080", fontSize: 14 }}>
+                      <Text style={{ fontSize: 16 }}>
                         {" "}
+                        {" " + data[el].amount}
+                      </Text>
+                      <Text style={{ color: "#808080", fontSize: 14 }}>
+                        {"  "}
                         shares
                       </Text>
                     </View>
                     <View
                       style={{
                         flexDirection: "row",
-                        flex: 0.25,
+                        // flex: 0.3,
                         alignItems: "center",
                       }}
                     >

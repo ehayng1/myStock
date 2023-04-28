@@ -473,10 +473,10 @@ export function Week5({ navigation }) {
         >
           News Trading
         </Text>
-        <Image
+        {/* <Image
           style={{ marginLeft: 10, width: 350, height: 250, marginBottom: 30 }}
           source={require("../../data/week2.png")}
-        ></Image>
+        ></Image> */}
         <View
           style={{
             // display: "flex",
@@ -1389,10 +1389,10 @@ export function Week13({ navigation }) {
         >
           Margin Trading
         </Text>
-        <Image
+        {/* <Image
           style={{ marginLeft: 10, width: 350, height: 250, marginBottom: 30 }}
-          source={require("../../data/week2.png")}
-        ></Image>
+          source={require("../../data/Weeks/week2.png")}
+        ></Image> */}
         <View
           style={{
             // display: "flex",

@@ -5,17 +5,22 @@ export default function PaintTransctions({ symbol, amount }) {
     <View
       style={{
         backgroundColor: "#EDE9D0",
-        height: 55,
+        height: "8%",
         borderRadius: 10,
-        marginBottom: 15,
+        marginBottom: "2%",
       }}
     >
-      <View style={{ flexDirection: "row", alignItems: "center" }}>
+      <View
+        style={{
+          flexDirection: "row",
+          alignItems: "center",
+          marginBottom: "5%",
+        }}
+      >
         <View
           style={{
             flexGrow: 1,
-            marginLeft: 15,
-
+            marginLeft: "4%",
             justifyContent: "center",
           }}
         >
@@ -23,13 +28,15 @@ export default function PaintTransctions({ symbol, amount }) {
             style={{
               fontSize: 16,
               fontWeight: "500",
-              marginBottom: 5,
-              marginTop: 7,
+              marginBottom: "2%",
+              marginTop: "4%",
             }}
           >
             {symbol}
           </Text>
-          <Text style={{ fontSize: 12, color: "#5A5742" }}>{symbol}</Text>
+          <Text style={{ fontSize: 12, color: "#5A5742", marginLeft: "2%" }}>
+            {symbol}
+          </Text>
         </View>
         <Text
           style={{
@@ -43,7 +50,7 @@ export default function PaintTransctions({ symbol, amount }) {
             marginRight: 20,
           }}
         >
-          {amount > 0 ? "-" : "+"} $ {Math.abs(amount)}
+          {amount > 0 ? "-" : "+"} $ {Math.abs(amount).toFixed(2)}
         </Text>
       </View>
     </View>

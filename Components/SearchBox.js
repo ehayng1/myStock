@@ -6,10 +6,10 @@ import SearchCard from "./SearchCard";
 import PaintStock from "./PaintStock";
 import { MaterialIcons } from "@expo/vector-icons";
 
-const finnhub = require("finnhub");
-const api_key = finnhub.ApiClient.instance.authentications["api_key"];
-api_key.apiKey = "cfvvpm1r01qmgsjq9l0gcfvvpm1r01qmgsjq9l10";
-const finnhubClient = new finnhub.DefaultApi();
+// const finnhub = require("finnhub");
+// const api_key = finnhub.ApiClient.instance.authentications["api_key"];
+// api_key.apiKey = "cfvvpm1r01qmgsjq9l0gcfvvpm1r01qmgsjq9l10";
+// const finnhubClient = new finnhub.DefaultApi();
 
 export default function searchStock(navigation) {
   const [filteredStringArray, setFilteredStringArray] = useState([]);
