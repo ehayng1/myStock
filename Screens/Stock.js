@@ -43,7 +43,7 @@ function Stock({ navigation }) {
           tempData.push({
             symbol: el.symbol,
             price: el.regularMarketPrice,
-            percent: el.regularMarketChange.toFixed(2),
+            percent: el.regularMarketChangePercent.toFixed(2),
           });
         });
         setStockData(tempData);

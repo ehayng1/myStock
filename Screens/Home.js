@@ -174,7 +174,8 @@ export default function Home({ route, navigation }) {
               color: userData.weeklyProfit > 0 ? "#006100" : "#9A0000",
             }}
           >
-            {userData.weeklyProfit >= 0 ? "+" : "-"} $ {userData.weeklyProfit}
+            {userData.weeklyProfit >= 0 ? "+" : "-"} ${" "}
+            {userData.weeklyProfit.toFixed(2)}
           </Text>
 
           {userData.firstTrade === true ? (

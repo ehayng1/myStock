@@ -6,8 +6,9 @@ import {
   Image,
   Pressable,
 } from "react-native";
-import { color } from "react-native-reanimated";
-import { MaterialIcons } from "@expo/vector-icons";
+import { Dimensions } from "react-native";
+const screenWidth = Dimensions.get("window").width;
+const screenHeigth = Dimensions.get("window").height;
 
 export function Week1() {
   return (
@@ -135,10 +136,12 @@ export function Week2({ navigation }) {
         >
           Position Trading
         </Text>
+
         <Image
-          style={{ marginLeft: 10, width: 350, height: 250, marginBottom: 30 }}
+          style={styles.image}
           source={require("../../data/Weeks/week2.png")}
         ></Image>
+
         <View
           style={{
             // display: "flex",
@@ -246,7 +249,7 @@ export function Week3({ navigation }) {
           Swing Trading
         </Text>
         <Image
-          style={{ marginLeft: 10, width: 350, height: 250, marginBottom: 30 }}
+          style={styles.image}
           source={require("../../data/Weeks/week3.png")}
         ></Image>
         <View
@@ -358,7 +361,7 @@ export function Week4({ navigation }) {
           Scalping
         </Text>
         <Image
-          style={{ marginLeft: 10, width: 350, height: 250, marginBottom: 30 }}
+          style={styles.image}
           source={require("../../data/Weeks/week4.png")}
         ></Image>
         <View
@@ -596,7 +599,7 @@ export function Week6({ navigation }) {
           End of day Trading
         </Text>
         <Image
-          style={{ marginLeft: 10, width: 350, height: 250, marginBottom: 30 }}
+          style={styles.image}
           source={require("../../data/Weeks/week6.png")}
         ></Image>
         <View
@@ -718,7 +721,7 @@ export function Week7({ navigation }) {
           Breakout Trading
         </Text>
         <Image
-          style={{ marginLeft: 10, width: 350, height: 250, marginBottom: 30 }}
+          style={styles.image}
           source={require("../../data/Weeks/week7.png")}
         ></Image>
         <View
@@ -839,7 +842,7 @@ export function Week8({ navigation }) {
           Pullback Trading
         </Text>
         <Image
-          style={{ marginLeft: 10, width: 350, height: 250, marginBottom: 30 }}
+          style={styles.image}
           source={require("../../data/Weeks/week8.png")}
         ></Image>
         <View
@@ -951,7 +954,7 @@ export function Week9({ navigation }) {
           Moving average trading
         </Text>
         <Image
-          style={{ marginLeft: 10, width: 350, height: 250, marginBottom: 30 }}
+          style={styles.image}
           source={require("../../data/Weeks/week9.jpg")}
         ></Image>
         <View
@@ -1064,7 +1067,7 @@ export function Week10({ navigation }) {
           Momentum Trading
         </Text>
         <Image
-          style={{ marginLeft: 10, width: 350, height: 250, marginBottom: 30 }}
+          style={styles.image}
           source={require("../../data/Weeks/week10.png")}
         ></Image>
         <View
@@ -1171,7 +1174,7 @@ export function Week11({ navigation }) {
           IPOs (Initial Public Offering)
         </Text>
         <Image
-          style={{ marginLeft: 10, width: 350, height: 250, marginBottom: 30 }}
+          style={styles.image}
           source={require("../../data/Weeks/week11.png")}
         ></Image>
         <View
@@ -1283,7 +1286,7 @@ export function Week12({ navigation }) {
           Short Selling
         </Text>
         <Image
-          style={{ marginLeft: 10, width: 350, height: 250, marginBottom: 30 }}
+          style={styles.image}
           source={require("../../data/Weeks/week12.png")}
         ></Image>
         <View
@@ -1512,7 +1515,7 @@ export function Week14({ navigation }) {
           Funds Trading
         </Text>
         <Image
-          style={{ marginLeft: 10, width: 350, height: 250, marginBottom: 30 }}
+          style={styles.image}
           source={require("../../data/Weeks/week14.png")}
         ></Image>
         <View
@@ -1621,7 +1624,7 @@ export function Week15({ navigation }) {
           Seasonal Trading
         </Text>
         <Image
-          style={{ marginLeft: 10, width: 350, height: 250, marginBottom: 30 }}
+          style={styles.image}
           source={require("../../data/Weeks/week15.png")}
         ></Image>
         <View
@@ -1721,5 +1724,11 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     flexGrow: 1,
     color: "#303030",
+  },
+  image: {
+    marginLeft: "2.25%",
+    width: screenWidth * 0.95,
+    height: screenHeigth * 0.35,
+    resizeMode: "contain",
   },
 });
